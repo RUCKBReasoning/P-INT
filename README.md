@@ -14,7 +14,7 @@ You can download datasets used in this work from [here](https://drive.google.com
 
 ### Pre-trained embeddings
 * [NELL-One](https://drive.google.com/file/d/1XXvYpTSTyCnN-PBdUkWBXwXBI99Chbps/view?usp=sharing)
-* FB15k237-One   We use this [repository](https://github.com/thunlp/OpenKE) to get the embeddings used in this work.
+* FB15k237-One   (We use this [repository](https://github.com/thunlp/OpenKE) to get the embeddings used in this work.)
 
 ## How to run
 
