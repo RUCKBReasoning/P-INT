@@ -8,7 +8,7 @@
 We conduct our experiments on two datasets — NELL-One and FB15k237-One. 
 You can find original datasets(NELL-One) from [here](https://github.com/xwhan/One-shot-Relational-Learning).
 
-You can download datasets used in this work from [here](https://drive.google.com/drive/folders/16pamNJ-8gDPC2qaObN0pr93xeqdzq4Sq?usp=sharing)
+You can download datasets used in this work from [here](https://drive.google.com/drive/folders/16pamNJ-8gDPC2qaObN0pr93xeqdzq4Sq?usp=sharing).
 
 ### Training
 * For NELL-One: python train.py --dataset "NELL-One" --few n --max_batches 200000
