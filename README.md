@@ -17,7 +17,7 @@ You can download datasets used in this work from [here](https://drive.google.com
 * For NELL-One: python train.py --dataset "NELL-One" --few n --max_batches 200000
 * For FB15k237-One: python train.py --dataset "FB15k237-One" --few n --max_batches 10000
 
-After training, the checkpoint will be saved and the corresponding results will be printed.
+After training, the checkpoint will be saved in `./models` and the corresponding results will be printed.
 
 ### Test
 * For NELL-One: python train.py --dataset "NELL-One" --few n --test
