@@ -24,7 +24,7 @@ You can download datasets used in this work from [here](https://drive.google.com
 
 In this work, we set n=1 for one-shot and n=5 for five-shot. 
 
-After training, the checkpoint will be saved in `./models` and the corresponding results will be printed.
+After training, the checkpoints will be saved in `./models` and the corresponding results will be printed.
 
 ### Test
 * For NELL-One: ``python train.py --dataset "NELL-One" --few n --test``
