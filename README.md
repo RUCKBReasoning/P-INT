@@ -1,8 +1,5 @@
 # P-INT
 
-
-## Start
-
 ### Requirements
 * ``Python 3.7.9 ``
 * ``PyTorch 1.7.0``
