@@ -1,15 +1,17 @@
 # P-INT
 P-INT: A Path-based Interaction Model for Few-shot Knowledge Graph Completion
 
-### Requirements
+## Requirements
 * ``Python 3.7.9 ``
 * ``PyTorch 1.7.0``
 
-### Datasets
+## Datasets
 We conduct our experiments on two datasets — NELL-One and FB15k237-One. 
 You can find original datasets(NELL-One) from [here](https://github.com/xwhan/One-shot-Relational-Learning).
 
 You can download datasets used in this work from [here](https://drive.google.com/drive/folders/16pamNJ-8gDPC2qaObN0pr93xeqdzq4Sq?usp=sharing).
+
+## How to run
 
 ### Training
 * For NELL-One: python train.py --dataset "NELL-One" --few n --max_batches 200000
