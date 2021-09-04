@@ -28,7 +28,7 @@ class Trainer(object):
 	
 	def __init__(self, arg):
 		super(Trainer, self).__init__()
-		for k, v in vars(arg).items(): setattr(self, k, v) #相当于self.k = v
+		for k, v in vars(arg).items(): setattr(self, k, v) 
 
 		#self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 		self.device = torch.device("cpu")
