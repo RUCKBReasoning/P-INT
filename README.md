@@ -28,6 +28,8 @@ You can set ``--max_batches`` smaller.
 
 After training, the checkpoints will be saved in `./models` and the corresponding results will be printed.
 
+You can also download the checkpoints from [here](https://drive.google.com/drive/folders/16pamNJ-8gDPC2qaObN0pr93xeqdzq4Sq?usp=sharing).
+
 ### Test
 * For NELL-One: ``python train.py --dataset "NELL-One" --few n --test``
 * For FB15k237-One: ``python train.py --dataset "FB15k237-One" --few n --test``
