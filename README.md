@@ -1,5 +1,4 @@
 # P-INT
-P-INT: A Path-based Interaction Model for Few-shot Knowledge Graph Completion
 
 ## Requirements
 * ``Python 3.7.9 ``
