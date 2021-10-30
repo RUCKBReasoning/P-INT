@@ -248,7 +248,6 @@ class T_GRUA(nn.Module):
 					r_max_score = sort_score.tolist()[node_index.tolist().index(query_tail[i])] 	# find the score for the right answer	
 					index_r = sort_score.tolist().index(r_max_score) + 1 # the index for the right answer
 					 
-					
 					if index_r==1:
 						hit1.append(1)
 					else:
