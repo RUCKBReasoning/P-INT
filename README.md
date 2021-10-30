@@ -32,4 +32,5 @@ You can also download the checkpoints from [here](https://drive.google.com/drive
 ### Test
 * For NELL-One: ``python train.py --dataset "NELL-One" --few n --test``
 * For FB15k237-One: ``python train.py --dataset "FB15k237-One" --few n --test``
+
 (The checkpoints are for your reference only. We find some errors in net.py, which slightly affect the effect after correction.)
