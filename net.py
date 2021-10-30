@@ -243,18 +243,11 @@ class T_GRUA(nn.Module):
 					B = torch.sum(A,dim=1)
 					output = self.count_one(t_h, t_h_q, idx, B, tree_all_emb[i], support_tree_emb, support_tree_emb_list, tree_q[i].reshape(-1,1).squeeze(-1), False).squeeze(-1)
 
-					sort_score, sort_index = torch.sort(output, descending=True) 
-					node_index = torch.tensor(filt_node)[sort_index.long()]				
-					# node_name  = [self.id2ent[i] for i in node_index.tolist()]
-					# print("node_index:",node_index)
-
-					score_one_set = set()
-					for j in range(len(filt_node)):
-							score_one_set.add(float(sort_score[j]))
-
-					score_one_set = list(score_one_set)					
-					r_max_score = sort_score.tolist()[node_index.tolist().index(query_tail[i])] 					
-					index_r = score_one_set.index(r_max_score) + 1  
+					sort_score, sort_index = torch.sort(output, descending=True) # filter nodes' scores
+					node_index = torch.tensor(filt_node)[sort_index.long()]	 # sort filter nodes according to scores
+					r_max_score = sort_score.tolist()[node_index.tolist().index(query_tail[i])] 	# find the score for the right answer	
+					index_r = sort_score.tolist().index(r_max_score) + 1 # the index for the right answer
+					 
 					
 					if index_r==1:
 						hit1.append(1)
