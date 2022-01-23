@@ -3,13 +3,13 @@ import os
 
 args = {}
 '''
-# /home/xujingwen/data_create/NELL
-args["data_dir"] = "/home/xujingwen/data_create/NELL"
+# /home/jwx/data_create/NELL
+args["data_dir"] = "/home/jwx/data_create/NELL"
 args["dataset_name"] = "path"
 '''
 #'''
-# /home/xujingwen/data_create/FB15k-237/fb_path_use
-args["data_dir"] = "/home/xujingwen/data_create/FB15k-237/fb_path_use"
+# /home/jwx/data_create/FB15k-237/fb_path_use
+args["data_dir"] = "/home/jwx/data_create/FB15k-237/fb_path_use"
 args["dataset_name"] = "path"
 #'''
 
