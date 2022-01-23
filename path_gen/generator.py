@@ -5,13 +5,13 @@ from collections import defaultdict
 
 args = {}
 '''
-# /home/xujingwen/data_create/NELL
-args["data_dir"] = "/home/xujingwen/data_create"
+# /home/jwx/data_create/NELL
+args["data_dir"] = "/home/jwx/data_create"
 args["dataset_name"] = "NELL"
 '''
 #'''
-# /home/xujingwen/data_create/FB15k-237/fb_path_use
-args["data_dir"] = "/home/xujingwen/data_create/FB15k-237"
+# /home/jwx/data_create/FB15k-237/fb_path_use
+args["data_dir"] = "/home/jwx/data_create/FB15k-237"
 args["dataset_name"] = "fb_path_use"
 #'''
 
