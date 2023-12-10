@@ -184,3 +184,18 @@ def list2tensor(data_list: list, padding_idx,  dtype=torch.long,  device=torch.d
 		tuple(pad_tensor(torch.tensor(data, dtype=dtype), max_len, padding_idx, 0) for data in data_list)).to(device)
 	return data_tensor
 
+def path_graph_out(dataset): # dataset folder
+
+	ent2id = json.load(open(os.path.join(dataset, 'ent2ids')))
+	rel2id = json.load(open(os.path.join(dataset, 'relation2ids')))
+
+	e1_rele2 = defaultdict(list)
+
+	with open(dataset + '/path_graph') as f:
+		lines = f.readlines()
+		for line in lines:
+			e1,rel,e2 = line.rstrip().split()
+			e1_rele2[ent2id[e1]].append((rel2id[rel], ent2id[e2]))
+			e1_rele2[ent2id[e2]].append((rel2id[rel+'_inv'], ent2id[e1]))
+	
+	json.dump(e1_rele2, open(dataset + '/path_graph_out.json', 'w'))
